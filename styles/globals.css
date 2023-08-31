@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +24,40 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+
+@layer base{
+
+    html{
+      width:100%;
+      height:100%;
+      
+    }
+
+    body{
+      
+      width:100%;
+      height:100%;
+    }
+
+    .delimitationblue{
+      @apply border border-solid border-4 border-blue-500;
+    }
+
+    .delimitationred{
+      @apply border border-solid border-4 border-red-500;
+    }
+
+    .delimitationpurple{
+      @apply border border-solid border-4 border-purple-500;
+    }
+
+    .delimitationyellow{
+      @apply border border-solid border-4 border-yellow-500;
+    }
+
+    .delimitationgreen{
+      @apply border border-solid border-4 border-green-500;
+    }
 }
