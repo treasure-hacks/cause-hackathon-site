@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Register for Treasure Hacks 3.5</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/site.webmanifest">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3c9709">
+  <link rel="shortcut icon" href="/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#1e4a05">
+  <meta name="msapplication-config" content="/icons/browserconfig.xml">
+</head>
+<body>
+  <form action="http://localhost:4200/events/cause-sd-23/register" method="POST" enctype="multipart/form-data">
+    <div class="item-container header-image-container"><img src="banner.png" alt="Treasure Hacks Banner" width="640" height="160"></div>
+    <div class="item-container header">
+      <h1>Cause Hacks Registration</h1>
+      <p>Thanks for your interest in Cause Hacks! Please note that since this is an in-person event, there is limited space available.<br><br>
+        Applications will be evaluated on a rolling basis, providing a good opportunity for acceptance as long as spaces are open.
+        If you have any questions, please contact us at <a href="mailto:team@treasurehacks.org">team@treasurehacks.org</a>.<br><br>
+        Check out our social media:
+        </p><ul>
+          <li>Website: <a target="_blank" href="https://cause.treasurehacks.org/">https://cause.treasurehacks.org/</a><br></li>
+          <li>YouTube: <a target="_blank" href="https://youtube.com/@treasurehacks">https://youtube.com/@treasurehacks</a><br></li>
+          <li>Instagram: <a target="_blank" href="https://instagram.com/treasure_hacks">https://instagram.com/treasure_hacks</a><br></li>
+          <li>LinkedIn: <a target="_blank" href="https://www.linkedin.com/company/treasure-hacks/">https://www.linkedin.com/company/treasure-hacks/</a></li>
+        </ul>
+      <p></p>
+    </div>
+    <div class="item-container">
+      <div class="label">First Name</div>
+        <div class="input-wrapper">
+          <input type="text" name="first_name" placeholder="First name" required><br>
+        </div>
+        <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          This question is required
+        </span>
+      </div>
+    </div>
+    <div class="item-container">
+      <div class="label">Last Name</div>
+        <div class="input-wrapper">
+          <input type="text" name="last_name" placeholder="Last name" required><br>
+        </div>
+        <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          This question is required
+        </span>
+      </div>
+    </div>
+    <div class="item-container">
+      <div class="label">Email Address</div>
+        <div class="input-wrapper">
+          <input type="email" name="email" placeholder="someone@example.com" pattern="[\w\-\.]+@([\w\-]+\.)+[\w\-]{2,4}" required><br>
+        </div>
+        <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          Please enter a valid email
+          
+        </span>
+      </div>
+    </div>
+    <div class="item-container" data-min="1">
+      <div class="label">Where did you hear about us?</div>
+        
+          <label><input type="checkbox" name="referral" value="A student or colleague"><span>A student or colleague</span></label>
+        
+          <label><input type="checkbox" name="referral" value="Through an organization/community"><span>Through an organization/community</span></label>
+        
+          <label><input type="checkbox" name="referral" value="Social media"><span>Social media</span></label>
+        
+          <label><input type="checkbox" name="referral" value="Cause San Diego"><span>Cause San Diego</span></label>
+        
+          <label><input type="checkbox" name="referral" value="Cause Conference"><span>Cause Conference</span></label>
+        
+          <label class="other-label">
+            <input type="checkbox" name="referral" data-for="other" value="__other_option__"> Other: 
+            <div class="input-wrapper"><input type="text" name="referral__other"></div>
+          </label>
+      <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          Please choose at least one option
+          
+        </span>
+      </div>
+    </div>
+    <div class="item-container">
+      <div class="label">I am entering this event as a...</div>
+        
+          <label hidden><input type="radio" name="registrant_type" value="none" id="rti-none" required checked="checked"><span>
+            Not selected
+          </span></label>
+        
+          <label><input type="radio" name="registrant_type" value="student" id="rti-student" required><span>
+            Student
+          </span></label>
+        
+          <label><input type="radio" name="registrant_type" value="nonprofit" id="rti-nonprofit" required><span>
+            Nonprofit Organization
+          </span></label>
+        
+          <label><input type="radio" name="registrant_type" value="for-profit" id="rti-forprofit" required><span>
+            For-profit Organization
+          </span></label>
+        
+      <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          This question is required
+        </span>
+      </div>
+    </div>
+    <div class="item-container" data-show-if="rti-none">
+    <div class="label">Follow-up Questions</div>
+      <i>Please answer the question above to see the appropriate follow-up questions</i>
+    <div class="error">
+      <img src="invalid_field.svg" width="18" height="18"><span>
+        
+      </span>
+    </div>
+  </div>
+    <div class="item-container" data-show-if="rti-student">
+      <div class="label">What are your personal goals?</div>
+        <div class="input-wrapper textarea-wrapper">
+          <textarea type="text" name="student_personal_goals" placeholder="I am looking to improve my ability to communicate" required></textarea><br>
+        </div>
+      <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          This question is required
+        </span>
+      </div>
+    </div>
+    <div class="item-container" data-show-if="rti-student">
+      <div class="label">Current/Highest Level of Education</div>
+        
+          <label><input type="radio" name="student_edu_level" value="Less than Secondary / High School" required><span>
+            Less than Secondary / High School
+          </span></label>
+        
+          <label><input type="radio" name="student_edu_level" value="Secondary / High School" required><span>
+            Secondary / High School
+          </span></label>
+        
+          <label><input type="radio" name="student_edu_level" value="Undergraduate University (2 year - community college or similar)" required><span>
+            Undergraduate University (2 year - community college or similar)
+          </span></label>
+        
+          <label><input type="radio" name="student_edu_level" value="Undergraduate University (3+ year)" required><span>
+            Undergraduate University (3+ year)
+          </span></label>
+        
+          <label><input type="radio" name="student_edu_level" value="Graduate University (Masters, Professional, Doctoral, etc.)" required><span>
+            Graduate University (Masters, Professional, Doctoral, etc.)
+          </span></label>
+        
+          <label><input type="radio" name="student_edu_level" value="Code School / Bootcamp" required><span>
+            Code School / Bootcamp
+          </span></label>
+        
+          <label><input type="radio" name="student_edu_level" value="Other Vocational / Trade Program or Apprenticeship" required><span>
+            Other Vocational / Trade Program or Apprenticeship
+          </span></label>
+        
+          <label><input type="radio" name="student_edu_level" value="Post Doctorate" required><span>
+            Post Doctorate
+          </span></label>
+        
+          <label><input type="radio" name="student_edu_level" value="I&#x27;m currently not a student" required><span>
+            I&#x27;m currently not a student
+          </span></label>
+        
+      <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          This question is required
+        </span>
+      </div>
+    </div>
+    <div class="item-container" data-min="1" data-show-if="rti-student">
+      <div class="label">What kind of student are you?</div>
+        
+          <label><input type="checkbox" name="student_type" value="computer-science"><span>Computer Science</span></label>
+        
+          <label><input type="checkbox" name="student_type" value="business-related"><span>Business or Business-related (i.e. Marketing)</span></label>
+        
+          <label class="other-label">
+            <input type="checkbox" name="student_type" data-for="other" value="__other_option__"> Other: 
+            <div class="input-wrapper"><input type="text" name="student_type__other"></div>
+          </label>
+      <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          Please choose at least one option
+          
+        </span>
+      </div>
+    </div>
+    <div class="item-container" data-show-if="rti-student">
+      <div class="label">Why do you want to participate?</div>
+        <div class="input-wrapper textarea-wrapper">
+          <textarea type="text" name="student_interest" placeholder="I am looking to improve my ability to communicate" required></textarea><br>
+        </div>
+      <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          This question is required
+        </span>
+      </div>
+    </div>
+    <div class="item-container" data-min="0" data-show-if="rti-student">
+      <div class="label">Which of the following best describes you? (optional)</div>
+        <i>This question is used ONLY to gauge our demographics and is not associated with your response.</i>
+        
+          <label><input type="checkbox" name="student_ethnicity" value="White/Caucasian"><span>White/Caucasian</span></label>
+        
+          <label><input type="checkbox" name="student_ethnicity" value="Hispanic, Latino, or Spanish"><span>Hispanic, Latino, or Spanish</span></label>
+        
+          <label><input type="checkbox" name="student_ethnicity" value="Black or African American"><span>Black or African American</span></label>
+        
+          <label><input type="checkbox" name="student_ethnicity" value="Asian"><span>Asian</span></label>
+        
+          <label><input type="checkbox" name="student_ethnicity" value="American Indian or Alaska Native"><span>American Indian or Alaska Native</span></label>
+        
+          <label><input type="checkbox" name="student_ethnicity" value="Middle Eastern or North African"><span>Middle Eastern or North African</span></label>
+        
+          <label><input type="checkbox" name="student_ethnicity" value="Native Hawailan or Other Pacific Islander"><span>Native Hawailan or Other Pacific Islander</span></label>
+        
+          <label><input type="checkbox" name="student_ethnicity" value="Some other race, ethnicity, or origin"><span>Some other race, ethnicity, or origin</span></label>
+        
+      <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          
+        </span>
+      </div>
+    </div>
+    <div class="item-container" data-show-if="rti-student">
+      <div class="label">Which of the following do you identify as? (optional)</div>
+        <i>This question is used ONLY to gauge our demographics and is not associated with your response.</i>
+        
+          <label hidden><input type="radio" name="student_gender_identification" value="Prefer Not to Answer" checked="checked"><span>
+            Not selected
+          </span></label>
+        
+          <label><input type="radio" name="student_gender_identification" value="Female"><span>
+            Female
+          </span></label>
+        
+          <label><input type="radio" name="student_gender_identification" value="Male"><span>
+            Male
+          </span></label>
+        
+          <label><input type="radio" name="student_gender_identification" value="Transgender Female"><span>
+            Transgender Female
+          </span></label>
+        
+          <label><input type="radio" name="student_gender_identification" value="Transgender Male"><span>
+            Transgender Male
+          </span></label>
+        
+          <label><input type="radio" name="student_gender_identification" value="Gender Variant/Non-Conforming"><span>
+            Gender Variant/Non-Conforming
+          </span></label>
+        
+          <label><input type="radio" name="student_gender_identification" value="Not Listed"><span>
+            Not Listed
+          </span></label>
+        
+          <label><input type="radio" name="student_gender_identification" value="Prefer Not to Answer"><span>
+            Prefer Not to Answer
+          </span></label>
+        
+      <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          
+        </span>
+      </div>
+    </div>
+    <div class="item-container" data-show-if="rti-nonprofit,rti-forprofit">
+      <div class="label">Company Name</div>
+        <div class="input-wrapper">
+          <input type="text" name="company_name" placeholder="Cause San Diego" required><br>
+        </div>
+        <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          This question is required
+        </span>
+      </div>
+    </div>
+    <div class="item-container" data-show-if="rti-nonprofit,rti-forprofit">
+      <div class="label">Company Website</div>
+        <div class="input-wrapper">
+          <input type="url" name="company_website" placeholder="https://www.causesandiego.org" required><br>
+        </div>
+        <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          This question is required
+        </span>
+      </div>
+    </div>
+    <div class="item-container" data-show-if="rti-nonprofit,rti-forprofit">
+      <div class="label">Company Description</div>
+        <div class="input-wrapper textarea-wrapper">
+          <textarea type="text" name="company_description" placeholder="Please include ___, ___, ___" required></textarea><br>
+        </div>
+      <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          This question is required
+        </span>
+      </div>
+    </div>
+    <div class="item-container" data-min="1" data-max="3" data-show-if="rti-student,rti-nonprofit,rti-forprofit">
+      <div class="label">Which social issues are most important to you?</div>
+        <i>Select up to 3 issues</i>
+        
+          <label><input type="checkbox" name="social_issues" value="Animal Advocacy"><span>Animal Advocacy</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Children and Youth Services"><span>Children and Youth Services</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Civil and Human Rights"><span>Civil and Human Rights</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Community betterment"><span>Community betterment</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Criminal Justice Reform"><span>Criminal Justice Reform</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Disaster Relief"><span>Disaster Relief</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Drug Policy Reform"><span>Drug Policy Reform</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Education"><span>Education</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Gender Equality"><span>Gender Equality</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Healthcare Access"><span>Healthcare Access</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Homelessness"><span>Homelessness</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Hunger Relief"><span>Hunger Relief</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Immigrant and Refugee Rights"><span>Immigrant and Refugee Rights</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="LGBTQ+ Rights"><span>LGBTQ+ Rights</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Mental Health Awareness"><span>Mental Health Awareness</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Poverty Alleviation"><span>Poverty Alleviation</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Racial Justice"><span>Racial Justice</span></label>
+        
+          <label><input type="checkbox" name="social_issues" value="Sustainability"><span>Sustainability</span></label>
+        
+          <label class="other-label">
+            <input type="checkbox" name="social_issues" data-for="other" value="__other_option__"> Other: 
+            <div class="input-wrapper"><input type="text" name="social_issues__other"></div>
+          </label>
+      <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          Please choose between 1 and 3 options
+          
+        </span>
+      </div>
+    </div>
+    <div class="item-container" data-show-if="rti-student,rti-nonprofit,rti-forprofit">
+      <div class="label">Would you like receive monthly emails about our organization?</div>
+        
+          <label><input type="radio" name="newsletter" value="1" required data-type="boolean"><span>
+            Yes
+          </span></label>
+        
+          <label><input type="radio" name="newsletter" value="0" required data-type="boolean"><span>
+            No
+          </span></label>
+        
+      <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          This question is required
+        </span>
+      </div>
+    </div>
+    <input type="hidden" id="referrer-input" name="referrer">
+    
+    <input type="submit" value="Submit">
+  </form>
+  <script defer="defer" src="script.js"></script>
+</body>
+</html>
