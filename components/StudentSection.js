@@ -1,29 +1,57 @@
 
+const studentProfile=[
+{
+    title:"Cs student",
+    description:"You are able to op into the event with a template or some sort of “forkable” app that they can just adapt to the developed social good program; it would help create a compelling demo/providing necessary software, but we would not judge based on technical complexity.",
+    order:"normal",
+    imgSrc:"/csIllustration.jpg",
+},
+{
+    title:"Business Students",
+    description:"come into the event with “nothing” but their skills. These skills can range from straight business, to psychology, to finance. They’ll be tasked with helping to build the pitch, the strategy behind the developed social good program, assist with creating a road map, etc.",
+    order:"inversed",
+    imgSrc:"/businessIllustration.jpg",
+}];
+
 
 export function StudentSection(props)
 {
+    const studentProfileCards=studentProfile.map((element)=>{
+        return (<li key={element.title} className="h-[45%]">
+                <StudentProfileCard  img={element.imgSrc} order={element.order}title={element.title} description={element.description}/>
+            </li>);
+    });
     return(
-        <div className=" px-[140px] delimitationred mt-[120px] h-[600px] w-full flex">
-            <div className="delimitationyellow w-[50%] bg-[hsla(11,45%,38%,100%)] relative">
-                <div className="delimitationblue z-10 top-[10%] right-[20%] w-[90%] aspect-video bg-[hsl(196,31%,14%)] absolute"></div>
-                <div className="delimitationpurple z-20 top-[40%] left-[20%] w-[90%] aspect-video  bg-[hsl(196,31%,14%)] absolute"></div>
+        <div id="studentSection" className="h-[600px] delimitationgreen flex flex-row justify-between items-center py-[4%] px-[140px] bg-[hsl(35,46%,91%)]">
+            <ul className="delimitationpurple flex flex-col justify-between w-[60%] h-full ">
+                {studentProfileCards}
+            </ul>
+            <div className="w-[30%] delimitationpurple  px-[3%] flex flex-col justify-center h-full bg-[hsl(35,58%,81%)] rounded-xl">
+                <h2  className=" text-[hsl(11,39%,57%)] font-bold mb-[10%]">Students</h2>
+                <p className=" leading-6 mb-[10%] w-[85%] delimitationpurple">
+                    Cause Hacks is an opportunity for student to distinguish themselve in a competition, 
+                    work with industry professionals and expend your network at the same time.
+                </p>
+                <button className=" w-[110px] h-[50px]  flex justify-center items-center font-bold  text-[hsl(0,0%,100%)] bg-[hsl(67,23%,55%)] rounded-xl">Register</button>
             </div>
-            <div  className="delimitationyellow w-[50%] pt-[10%] px-[8%] text-white">
-                <h2 className=" font-bold mb-[5%] text-[hsl(11,63%,57%)] text-[32px]">Who is the event for?</h2>
-                <p className="text-[hsla(0,0%,82%,100%)] text-[16px]" >
-                    Hackaton are place to expand your horizon, embark on journey by meeting people, work in a teams and discover new possibilities. 
-                    The nature of the tasks in this one will mainly focus on two distinct related majors. <br/><br/>
-                    </p>
+        </div>
+    );
+}
 
-                <p className="text-[hsla(0,0%,82%,100%)] text-[16px]">
-                    <em className="font-bold text-[hsl(11,63%,57%)]">Business Students</em>: Pitch and use your analytical skill to formulate a viable roadmap using the ressources of the nonprofit and 
-                for-profit organizations.<br/><br/>
-                </p>
 
-                <p className="text-[hsla(0,0%,82%,100%)] text-[16px]">
-                    <em className="font-bold text-[hsl(11,63%,57%)]">CS Students</em>: Use your programming background to bring to life a demo representing the solution you and your team came up with. 
-                A perfec t opportunity for you to put theoric knowledge into practise with a real case studies. 
-                </p>
+function StudentProfileCard(props){
+
+    const order=props.order=="normal"?" flex-row ":" flex-row-reverse ";
+    const padding=props.order=="normal"? "":" pl-[5%] ";
+    return (
+        <div className={"delimitationred  justify-between flex  h-full w-full"+order}>
+            <div className={"delimitationblue w-[55%] flex flex-col justify-center py-[3%]"+padding}>
+                <h3 className="text-[hsl(67,23%,55%)]  font-bold mb-6 delimitationyellow">{props.title}</h3>
+                <p className="w-[80%]  leading-6">{props.description}</p>
+            </div>
+            <div className="relative flex-1">
+                <img src={props.img} className="w-full h-full rounded-lg"/>
+                <div className="absolute w-full h-full bg-[hsla(35,83%,93%,43%)] left-[0%] top-[0%]"></div>
             </div>
         </div>
     );

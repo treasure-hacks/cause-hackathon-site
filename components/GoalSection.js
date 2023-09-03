@@ -3,23 +3,20 @@
 export function GoalSection(props){
     
     return(
-        <div className="delimitationyellow px-[140px] h-[600px] mt-[120px] flex">
-            <div className=" flex flex-col  bg-[hsl(113,79%,26%)] px-[8%] pt-[10%] align-center w-[45%] delimitationred">
-                <h2 className="font-bold mb-[8%] text-white text-[32px]">What are the goals?</h2>
-                <p className="text-[hsla(0,0%,82%,100%)] text-[16px]">
-                Form a team with a fellow student, a non-profit and a profit member to build an app in the course of 3 hours. 
-                You will have to communicate with your team member , brief an idea and put together a demo that you will have to present if front of the other team.
-                Many socials issue currently plague san diego and it will be your task to tackle them with innovative idea. 
-                Winner take all, life included. A battle to the death to make the world a better place
+       <div id="goalSection" className="delimitationgreen w-full h-[550px] bg-[hsl(35,58%,81%)] flex items-center px-[140px] relative overflow-hidden">
+            <div className="bg-[hsl(22,72%,63%)] w-[400px] h-[300px] p-6 rounded-xl ">
+                <h2  className="text-white mb-4 ">What are the goals?</h2>
+                <p className="text-white text-[16px] leading-6">
+                With your team of a student, non-profit, and for-profit, together you will design and develop a social good program that tackles 
+                current issues in San Diego. Below are examples of past programs that were executed.
                 </p>
             </div>
-            <ul className="w-[55%] h-full delimitationgreen text-white font-bold text-[22px]">
-                <li className="delimitationblue h-[20%] w-full flex items-center pl-[22%]">Housing</li>
-                <li className="delimitationblue h-[20%] w-full flex items-center pl-[50%]">Public Health</li>
-                <li className="delimitationblue h-[20%] w-full flex items-center pl-[12%]">Equality</li>
-                <li className="delimitationblue h-[20%] w-full flex items-center pl-[60%]">Environment</li>
-                <li className="delimitationblue h-[20%] w-full flex items-center pl-[40%]">Education</li>
-            </ul>
-        </div>
+            <img src="/environmentPuzzle.svg" className="absolute w-[350px] z-20 left-[28%] top-[0%]"/>
+            <img src="/housingPuzzle.svg" className="absolute z-30 w-[250px] left-[50%] top-[4%]"/>
+            <img src="/healthPuzzle.svg" className="absolute z-40  w-[250px] left-[10%] top-[55%]"/>
+            <img src="/equalityPuzzle.svg" className="absolute z-50 left-[80%] top-[%]"/>
+            <img src="/educationPuzzle.svg" className="absolute z-60 w-[200px] left-[70%] top-[4%]"/>
+            <img src="/handsPuzzle.svg" className="absolute z-10 top-[25%] left-[0%] left-[%] top-[%]"/>
+       </div>
     );
 }

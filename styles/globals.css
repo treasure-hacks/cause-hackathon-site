@@ -32,7 +32,20 @@ body {
     html{
       width:100%;
       height:100%;
-      
+
+
+    }
+
+    h2{
+      @apply text-[28px] font-bold;
+    }
+
+    h3{
+      @apply text-[22px] font-bold;
+    }
+
+    p{
+      @apply text-[14px] leading-6;
     }
 
     body{
@@ -41,7 +54,7 @@ body {
       height:100%;
     }
 
-    .delimitationblue{
+    /* .delimitationblue{
       @apply border border-solid border-4 border-blue-500;
     }
 
@@ -59,5 +72,5 @@ body {
 
     .delimitationgreen{
       @apply border border-solid border-4 border-green-500;
-    }
+    } */
 }
