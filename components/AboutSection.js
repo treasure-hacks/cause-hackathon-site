@@ -3,10 +3,10 @@
 export function AboutSection(props){
 
     return (
-        <div id="aboutSection" className="w-full flex flex-row items-center delimitationpurple h-[600px] px-[140px] relative  overflow-hidden">
-            <div className="flex flex-col w-[45%] delimitationblue">
+        <div id="aboutSection" className="w-full flex md:flex-row items-center delimitationpurple md:h-[600px] h-[700px] xl:px-[140px] lg:px-[50px] md:px-[20px] md:pt-0 pt-[20%] justify-center md:justify-start  flex-col relative  overflow-hidden">
+            <div className="flex flex-col lg:w-[45%] md:w-[70%] md:mb-0 mb-[10%] w-[90%] delimitationblue">
                 <h2  className=" text-[hsl(11,39%,57%)] font-bold mb-[5%]">What is the event about</h2>
-                <p className="  mb-[5%] w-[85%] delimitationpurple">Welcome to Cause Hacks, in collaboration with Cause San Diego, a dedicated advocate for positive change for over two decades. 
+                <p className="  mb-[5%] lg:w-[85%] md:w-[95%] delimitationpurple">Welcome to Cause Hacks, in collaboration with Cause San Diego, a dedicated advocate for positive change for over two decades. 
                     In the span of 4.5 hours, 25 teams will be formed, each consisting of two students, a committed for-profit representative, 
                     and a visionary from a nonprofit. Working together, this diverse group will pool their creativity to develop 
                     innovative programs aimed at addressing important social issues.</p>
@@ -29,9 +29,9 @@ export function AboutSection(props){
                     </li>
                 </ul>
             </div>
-            <img src="/woman.svg" className="w-[50%] " />
-            <img src="/blobType1.svg" className="absolute  left-[50%] top-[0%]"/>
-            <img src="/blobType2.svg" className="absolute left-[90%] top-[70%]"/>
+            <img src="/woman.svg" className="md:w-[50%] w-[80%]" />
+            <img src="/blobType1.svg" className="absolute md:w-[auto] w-[25%]   md:left-[50%] left-[70%] top-[0%]"/>
+            <img src="/blobType2.svg" className="absolute md:left-[90%] left-[-20%] top-[70%]"/>
         </div>
     );
 }
