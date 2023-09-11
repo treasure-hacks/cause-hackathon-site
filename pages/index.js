@@ -24,11 +24,11 @@ export default function Home() {
       <meta name="msapplication-config" content="/icons/browserconfig.xml"/>
       <meta name="theme-color" content="#ffffff"/>
 
-      <meta name="description" content="Welcome to Cause Hacks, an unparalleled chance to unite with ambitious students and progressive organizations, creating solutions for pressing social issues!"/>
+      <meta name="description" content="Welcome to Cause Hacks, an opportunity to collaborate with ambitious students and progressive organizations to create a framework that addresses pressing social issues."/>
       <meta property="og:title" content="Cause Hacks"/>
       <meta property="og:site_name" content="Cause hacks"/>
       <meta property="og:url" content="https://cause.treasurehacks.org"/>
-      <meta property="og:description" content="Welcome to Cause Hacks, an unparalleled chance to unite with ambitious students and progressive organizations, creating solutions for pressing social issues!"/>
+      <meta property="og:description" content="Welcome to Cause Hacks, an opportunity to collaborate with ambitious students and progressive organizations to create a framework that addresses pressing social issues."/>
       <meta property="og:type" content="website"/>
       <meta property="og:image" content="/icons/android-chrome-512x512.png"/>
     </Head>
