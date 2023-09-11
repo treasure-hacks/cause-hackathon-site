@@ -111,7 +111,7 @@ export function Leaf(props){
                     <div className={"delimitationyellow font-normal w-[60%]"+textAlign}>
                         <div className={"  flex flex-row items-center mb-[4%]"+justify}>
                             <img src="/ClockOutline.svg" className="h-full mr-[2%]"/>
-                            <p className="  font-bold text-[14px]  text-[hsl(0,0%,85%)] ">{props.duration}</p>
+                            <p className="font-bold text-[14px]  text-[hsl(0,0%,85%)] ">{props.duration}</p>
                         </div>
                         
                         <p className="text-[20px] font-bold text-[hsl(190,63%,25%)] mb-[10%]">{props.title}</p>
