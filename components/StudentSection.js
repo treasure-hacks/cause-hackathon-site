@@ -1,14 +1,14 @@
 
 const studentProfile=[
 {
-    title:"CS student",
-    description:"You are able to op into the event with a template or some sort of “forkable” app that they can just adapt to the developed social good program; it would help create a compelling demo/providing necessary software, but we would not judge based on technical complexity.",
+    title:"Computer Science Students",
+    description:"You can come into the event to make your social good program more efficient. During the event, you will identify the program\u2019s needs, explain how you can help to ease the process, and plan how to do it. Following the event, you\u2019ll code up your plan and present it to your team.",
     order:"normal",
     imgSrc:"/csIllustration.webp",
 },
 {
     title:"Business Students",
-    description:"come into the event with “nothing” but their skills. These skills can range from straight business, to psychology, to finance. They’ll be tasked with helping to build the pitch, the strategy behind the developed social good program, assist with creating a road map, etc.",
+    description:"Come into the event with “nothing but your skills”, which can range from straight business, to psychology, to finance. You\u2019ll help with tasks such as building the pitch, forming the strategy behind the developed social good program, and assisting with creating a road map.",
     order:"inversed",
     imgSrc:"/businessIllustration.webp",
 }];
@@ -22,7 +22,7 @@ export function StudentSection(props)
             </li>);
     });
     return(
-        <div id="studentSection" className="xl:h-[600px] lg:h-[800px] delimitationgreen flex lg:flex-row md:flex-row-reverse md:flex-wrap-reverse flex-col-reverse md:justify-center lg:justify-between items-center xl:py-[2%] lg:py-[8%] md:py-[8%] md:py-[4%] py-[15%] xl:px-[140px] lg:px-[50px] md:px-[20px] px-[10%] bg-[hsl(35,46%,91%)]">
+        <div id="studentSection" className="xl:h-[600px] lg:h-[800px] delimitationgreen flex lg:flex-row md:flex-row-reverse md:flex-wrap-reverse flex-col-reverse md:justify-center lg:justify-between items-center xl:py-[2%] lg:py-[8%] md:py-[4%] py-[15%] xl:px-[140px] lg:px-[50px] md:px-[20px] px-[10%] bg-[hsl(35,46%,91%)]">
             <ul className="delimitationpurple flex lg:flex-col md:flex-row flex-col justify-between lg:w-[60%] h-full lg:px-0 md:px-[5%] ">
                 {studentProfileCards}
             </ul>
