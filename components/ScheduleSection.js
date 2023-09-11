@@ -36,7 +36,7 @@ const schedule=[
 export function ScheduleSection(props){
 
     return (
-        <div className="delimitationred xl:px-[180px] lg:px-[50px] md:px-[20px] relative flex lg:flex-row flex-col items-center   lg:justify-between lg:items-center bg-[hsl(190,37%,55%)]">
+        <div className="delimitationred xl:px-[250px] lg:px-[50px] md:px-[20px] relative flex lg:flex-row flex-col items-center   lg:justify-between lg:items-center bg-[hsl(190,37%,55%)]">
             <div className="bg-[hsl(190,63%,25%)] text-white h  lg:w-[370px] md:w-[350px] w-[80%] md:h-[300px] h-[300px]  p-6 rounded-xl mt-8  flex flex-col lg:items-start items-center">
                 <h2 className="text-white mb-8 text-center lg:text-left ">Schedule</h2>
                 <p className="text-white text-[16px] leading-6 mb-2 text-center lg:text-left"><em>Place:</em> VentureX san diego</p>
