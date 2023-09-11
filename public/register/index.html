@@ -272,6 +272,23 @@
         </span>
       </div>
     </div>
+    <div class="item-container" data-show-if="rti-student">
+      <div class="label">Would you attend a workshop for real estate and passive income in a future event?</div>
+        
+          <label><input type="radio" name="student_passive_income" value="1" required data-type="boolean"><span>
+            Yes
+          </span></label>
+        
+          <label><input type="radio" name="student_passive_income" value="0" required data-type="boolean"><span>
+            No
+          </span></label>
+        
+      <div class="error">
+        <img src="invalid_field.svg" width="18" height="18"><span>
+          This question is required
+        </span>
+      </div>
+    </div>
     <div class="item-container" data-show-if="rti-nonprofit,rti-forprofit">
       <div class="label">Company Name</div>
         <div class="input-wrapper">
@@ -297,7 +314,7 @@
     <div class="item-container" data-show-if="rti-nonprofit,rti-forprofit">
       <div class="label">Company Description</div>
         <div class="input-wrapper textarea-wrapper">
-          <textarea type="text" name="company_description" placeholder="Please include ___, ___, ___" required></textarea><br>
+          <textarea type="text" name="company_description" placeholder="Please include your mission/purpose, what you do, and anything else you would like to share." required></textarea><br>
         </div>
       <div class="error">
         <img src="invalid_field.svg" width="18" height="18"><span>

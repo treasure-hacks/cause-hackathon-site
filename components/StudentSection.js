@@ -1,7 +1,7 @@
 
 const studentProfile=[
 {
-    title:"Cs student",
+    title:"CS student",
     description:"You are able to op into the event with a template or some sort of “forkable” app that they can just adapt to the developed social good program; it would help create a compelling demo/providing necessary software, but we would not judge based on technical complexity.",
     order:"normal",
     imgSrc:"/csIllustration.webp",
