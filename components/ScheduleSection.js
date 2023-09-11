@@ -80,7 +80,7 @@ export function TimeTree(props){
     });
 
     return (
-        <ul className="delimitationgreen   md:w-[500px] w-[400px] ">
+        <ul className="delimitationgreen   md:w-[600px] w-[500px] max-w-[90%]">
 
             <LayoutLeaf keyName="topSpace" height="50px"/>
 
@@ -104,7 +104,7 @@ export function Leaf(props){
             <li  key={props.keyName+"topspace"} className={"delimitationpurple flex  w-full text-white "+flexAlign}>
                 <div className={"delimitationblue w-[50%] flex border-white"+flexAlign+descriptionDefinedBorder}>
 
-                    <div className={"delimitationyellow font-normal w-[60%]"+textAlign}>
+                    <div className={"delimitationyellow font-normal w-[80%]"+textAlign}>
                         <p className="font-normal mb-[2%]">{props.duration}</p>
                         <p className="text-[16px] mb-[2%]">{props.title}</p>
                         <p className="font-normal  ">{props.description}</p>
