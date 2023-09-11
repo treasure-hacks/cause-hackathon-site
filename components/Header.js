@@ -19,13 +19,7 @@ export function Header(props){
 export function Navbar(props){
 
     return (
-        <ul className="md:flex justify-between items-center delimitationpurple lg:w-[40%] md:w-[55%] font-bold  text-[16px] hidden  ">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#goals">Goals</a>
-            </li>
+        <ul className="md:flex justify-between items-center delimitationpurple lg:w-[40%] md:w-[55%] font-bold  text-[16px] hidden ">
             <li>
                 <a href="#students">Students</a>
             </li>
@@ -33,7 +27,13 @@ export function Navbar(props){
                 <a href="#organization">Organization</a>
             </li>
             <li>
+                <a href="#goals">Goals</a>
+            </li>
+            <li>
                 <a href="#schedule">Schedule</a>
+            </li>
+            <li>
+                <a href="/register/">Register</a>
             </li>
         </ul>
     );

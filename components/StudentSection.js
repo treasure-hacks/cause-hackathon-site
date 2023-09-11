@@ -32,7 +32,7 @@ export function StudentSection(props)
                     Cause Hacks is an opportunity for student to distinguish themselve in a competition, 
                     work with industry professionals and expend your network at the same time.
                 </p>
-                <button className=" w-[110px] h-[50px]  flex justify-center items-center font-bold  text-[hsl(0,0%,100%)] bg-[hsl(67,23%,55%)] rounded-xl">Register</button>
+                <a href="/register/" className=" w-[110px] h-[50px]  flex justify-center items-center font-bold  text-[hsl(0,0%,100%)] bg-[hsl(67,23%,55%)] rounded-xl">Register</a>
             </div>
         </div>
     );

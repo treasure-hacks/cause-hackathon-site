@@ -61,7 +61,7 @@ export function ScheduleSection(props){
                 <p className="text-white text-[16px] leading-6 mb-2 text-center lg:text-left"><em>Place:</em> VentureX San Diego</p>
                 <p className="text-white text-[16px] leading-6 mb-2 text-center lg:text-left"><em>Date:</em> October 15th</p>
                 <p className="text-white text-[16px] leading-6 mb-6 text-center lg:text-left"><em>Time:</em> 2PM</p>
-                <button className=" w-[110px] h-[50px]  flex justify-center items-center font-bold  text-[hsl(0,0%,100%)] bg-[hsl(67,23%,55%)] rounded-xl">Register</button>
+                <a href="/register/" className=" w-[110px] h-[50px]  flex justify-center items-center font-bold  text-[hsl(0,0%,100%)] bg-[hsl(67,23%,55%)] rounded-xl">Register</a>
             </div>
             <TimeTree/>
         </div>
