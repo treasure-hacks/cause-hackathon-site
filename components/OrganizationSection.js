@@ -26,7 +26,7 @@ export function OrganizationSection(props){
                 </div>
                 <img src="/blobType3.svg" className="absolute -left-[10%] md:top-[80%] top-[90%]"/>
                 <img src="/blobType4.svg" className="absolute left-[80%] -top-[10%]"/>
-                <img src="/puzzleJoining.svg" height="2000px" className=" absolute left-[0%] top-[45%]"/>
+                <img src="/puzzleJoining.svg" height="2000px" className=" absolute left-[0%] top-[45%] pointer-events-none"/>
             </div>
         </div>
     );
