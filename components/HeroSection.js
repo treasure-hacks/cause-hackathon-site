@@ -9,7 +9,7 @@ export function HeroSection(props){
                 <h3 className="font-bold mb-[30px] text-[hsl(11,39%,57%)] ">October 13th, VentureX San Diego</h3>
                 <p className=" mb-[30px] text-[hsl(0,0%,0%)] text-[20px] font-bold leading-8">An unparalleled chance to unite with ambitious students and progressive organizations, 
                     creating solutions for pressing social issues.</p>
-                <button className=" w-[110px] h-[50px]  flex justify-center items-center font-bold  text-[hsl(0,0%,100%)] bg-[hsl(11,39%,57%)] rounded-xl">Register</button>
+                <a href="/register/" className=" w-[110px] h-[50px]  flex justify-center items-center font-bold  text-[hsl(0,0%,100%)] bg-[hsl(11,39%,57%)] rounded-xl">Register</a>
             </div>
         </div>
     );
