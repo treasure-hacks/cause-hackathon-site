@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main className="flex flex-col">
-      <div className="  bg-[hsla(36,76%,91%,36%)] bg-[url('/heroBackgroundCroped.jpg')] bg-cover bg-no-repeat  ">
+      <div className="bg-[hsla(36,76%,91%,36%)] bg-[url('/heroBackgroundCropped.webp')] bg-cover bg-no-repeat  ">
         <Header/>
         <HeroSection/>
        

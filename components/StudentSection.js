@@ -4,13 +4,13 @@ const studentProfile=[
     title:"CS student",
     description:"You are able to op into the event with a template or some sort of “forkable” app that they can just adapt to the developed social good program; it would help create a compelling demo/providing necessary software, but we would not judge based on technical complexity.",
     order:"normal",
-    imgSrc:"/csIllustration.jpg",
+    imgSrc:"/csIllustration.webp",
 },
 {
     title:"Business Students",
     description:"come into the event with “nothing” but their skills. These skills can range from straight business, to psychology, to finance. They’ll be tasked with helping to build the pitch, the strategy behind the developed social good program, assist with creating a road map, etc.",
     order:"inversed",
-    imgSrc:"/businessIllustration.jpg",
+    imgSrc:"/businessIllustration.webp",
 }];
 
 
