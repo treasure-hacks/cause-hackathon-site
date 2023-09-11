@@ -1,34 +1,52 @@
 
 const schedule=[
     {
-        title:"Team building",
-        time:"4:30",
+        title:"Kickoff Meeting",
+        time:"9:30 AM",
         duration:"15 min",
-        description:"In this activity, you will have to complete those tasks"
+        description:"Here, we will go over details like timing, presentation requirements, and general advice."
     },
     {
-        title:"Team building",
-        time:"4:30",
+        title:"Team Building",
+        time:"9:45 AM",
         duration:"15 min",
-        description:"In this activity, you will have to complete those tasks"
+        description:"In groups of 10 students, 5 nonprofits, and 5 for-profits, you will network and form your team."
     },
     {
-        title:"Team building",
-        time:"4:30",
-        duration:"15 min",
-        description:"In this activity, you will have to complete those tasks"
+        title:"Building Period 1",
+        time:"10:00 AM",
+        duration:"1 hr, 15 min",
+        description:"This is the first block of time you will have to develop your framework and pitch"
     },
     {
-        title:"Team building",
-        time:"4:30",
-        duration:"15 min",
-        description:"In this activity, you will have to complete those tasks"
+        title:"Lunch",
+        time:"11:15 AM",
+        duration:"30 min",
+        description:"Lunch break!"
     },
     {
-        title:"Team building",
-        time:"4:30",
-        duration:"15 min",
-        description:"In this activity, you will have to complete those tasks"
+        title:"Building Period 2",
+        time:"11:45 AM",
+        duration:"1 hr, 15 min",
+        description:"This is the second block of time you will have to develop your framework and pitch"
+    },
+    {
+        title:"Presentations",
+        time:"1:00 PM",
+        duration:"40 min",
+        description:"Teams are split into two brackets, where the best one from each group presents again in front of everyone"
+    },
+    {
+        title:"Additional Judging Time",
+        time:"1:40 PM",
+        duration:"10 min",
+        description:"Judges finish scoring projects, add any last comments, and decide the top team"
+    },
+    {
+        title:"Closing Ceremony",
+        time:"1:50 PM",
+        duration:"10 min",
+        description:"The winners will be announced, and takeaways from the event will be presented!"
     },
     
 ];
