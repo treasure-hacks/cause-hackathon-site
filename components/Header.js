@@ -21,19 +21,19 @@ export function Navbar(props){
     return (
         <ul className="md:flex justify-between items-center delimitationpurple lg:w-[40%] md:w-[55%] font-bold  text-[16px] hidden  ">
             <li>
-                <a href="#aboutSection">About</a>
+                <a href="#about">About</a>
             </li>
             <li>
-                <a href="#goalSection">Goals</a>
+                <a href="#goals">Goals</a>
             </li>
             <li>
-                <a href="#studentSection">Students</a>
+                <a href="#students">Students</a>
             </li>
             <li>
-                <a href="#organizationSection">Organization</a>
+                <a href="#organization">Organization</a>
             </li>
             <li>
-                <a href="#scheduleSection">Schedule</a>
+                <a href="#schedule">Schedule</a>
             </li>
         </ul>
     );

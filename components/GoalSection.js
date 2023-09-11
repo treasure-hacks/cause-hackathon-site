@@ -3,7 +3,7 @@
 export function GoalSection(props){
     
     return(
-       <div id="goalSection" className="delimitationgreen w-full lg:h-[550px] md:h-[500px] h-[650px] bg-[hsl(35,58%,81%)] flex md:flex-row flex-col items-center md:py-0 py-[15%] md:items-center xl:px-[140px] lg:px-[50px] md:px-[20px] relative overflow-hidden ">
+       <div id="goals" className="delimitationgreen w-full lg:h-[550px] md:h-[500px] h-[650px] bg-[hsl(35,58%,81%)] flex md:flex-row flex-col items-center md:py-0 py-[15%] md:items-center xl:px-[140px] lg:px-[50px] md:px-[20px] relative overflow-hidden ">
 
             <div className="bg-[hsl(22,72%,63%)] lg:w-[400px] md:w-[350px] w-[80%] md:h-[300px] h-[300px]  p-6 rounded-xl ">
                 <h2  className="text-white mb-4 ">What are the goals?</h2>

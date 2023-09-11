@@ -22,7 +22,7 @@ export function StudentSection(props)
             </li>);
     });
     return(
-        <div id="studentSection" className="xl:h-[600px] lg:h-[800px] delimitationgreen flex lg:flex-row md:flex-row-reverse md:flex-wrap-reverse flex-col-reverse md:justify-center lg:justify-between items-center xl:py-[2%] lg:py-[8%] md:py-[4%] py-[15%] xl:px-[140px] lg:px-[50px] md:px-[20px] px-[10%] bg-[hsl(35,46%,91%)]">
+        <div id="students" className="xl:h-[600px] lg:h-[800px] delimitationgreen flex lg:flex-row md:flex-row-reverse md:flex-wrap-reverse flex-col-reverse md:justify-center lg:justify-between items-center xl:py-[2%] lg:py-[8%] md:py-[4%] py-[15%] xl:px-[140px] lg:px-[50px] md:px-[20px] px-[10%] bg-[hsl(35,46%,91%)]">
             <ul className="delimitationpurple flex lg:flex-col md:flex-row flex-col justify-between lg:w-[60%] h-full lg:px-0 md:px-[5%] ">
                 {studentProfileCards}
             </ul>

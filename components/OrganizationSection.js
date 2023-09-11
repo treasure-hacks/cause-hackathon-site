@@ -2,7 +2,7 @@
 export function OrganizationSection(props){
 
     return (
-        <div id="organizationSection" className="w-full md:h-[750px] h-[1000px]   delimitationred flex justify-center items-center xl:px-[140px] lg:px-[50px] overflow-hidden">
+        <div id="organization" className="w-full md:h-[750px] h-[1000px]   delimitationred flex justify-center items-center xl:px-[140px] lg:px-[50px] overflow-hidden">
             <div className="bg-[hsl(67,23%,55%)] lg:h-[650px] lg:w-[900px] md:w-full h-full p-[3%] flex flex-col items-center rounded-2xl relative" >
                 <h2  className=" text-[hsl(0,0%,100%)] font-bold mb-[5%]">Organization</h2>
                 <div className="delimitationgreen flex md:flex-row   lg:justify-around md:justify-between md:items-start items-center flex-col ">
