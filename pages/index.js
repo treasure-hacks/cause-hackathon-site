@@ -6,6 +6,7 @@ import {HeroSection} from '../components/HeroSection';
 import {StudentSection} from '../components/StudentSection';
 import {AboutSection} from '../components/AboutSection';
 import {OrganizationSection} from '../components/OrganizationSection';
+import {ScheduleSection} from '../components/ScheduleSection';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -13,15 +14,17 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main className="flex flex-col">
-      <div className="bg-[hsla(36,76%,91%,36%)] bg-[url('/heroBackgroundCroped.jpg')] bg-cover bg-no-repeat  ">
+      <div className="  bg-[hsla(36,76%,91%,36%)] bg-[url('/heroBackgroundCroped.jpg')] bg-cover bg-no-repeat  ">
         <Header/>
         <HeroSection/>
+       
       </div>
-      <div className="bg-[hsla(35,83%,93%,100%)] pb-[300px]">
+      <div className="bg-[hsla(35,83%,93%,100%)] ">
         <AboutSection/>
         <StudentSection/>
         <OrganizationSection/>
         <GoalSection/>
+        <ScheduleSection/>
         
       </div>
 
