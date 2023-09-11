@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 
 const schedule=[
     {
@@ -72,18 +73,20 @@ export function TimeTree(props){
 
     const leafs=schedule.map((element,index)=>{
         return (
-            <Leaf key={element.title} title={element.title} time={element.time} description={element.description} duration={element.duration} index={index} />
+            <Fragment key={element.title}> {/* To avoid unique keys error */}
+                <Leaf keyName={element.title} title={element.title} time={element.time} description={element.description} duration={element.duration} index={index} />
+            </Fragment>
         )
     });
 
     return (
         <ul className="delimitationgreen   md:w-[500px] w-[400px] ">
 
-            <LayoutLeaf  key="topSpace" height="50px"/>
+            <LayoutLeaf keyName="topSpace" height="50px"/>
 
             {leafs}
 
-            <LayoutLeaf key="bottomSpace" height="50px"/>
+            <LayoutLeaf keyName="bottomSpace" height="50px"/>
         </ul>
     );
 }
@@ -98,7 +101,7 @@ export function Leaf(props){
 
     return (
         <>
-            <li  key={props.key} className={"delimitationpurple flex  w-full text-white "+flexAlign}>
+            <li  key={props.keyName+"topspace"} className={"delimitationpurple flex  w-full text-white "+flexAlign}>
                 <div className={"delimitationblue w-[50%] flex border-white"+flexAlign+descriptionDefinedBorder}>
 
                     <div className={"delimitationyellow font-normal w-[60%]"+textAlign}>
@@ -116,11 +119,11 @@ export function Leaf(props){
 
                 <div className={"delimitationgreen  px-[6%] flex flex-col justify-center border-white"+timeDefinedBorder}>
 
-                    <p className="text-[20px]">{props.time+" PM"}</p>
+                    <p className="text-[20px]">{props.time}</p>
 
                 </div>
             </li>
-            <LayoutLeaf key={props.title+"bottomspace"} height="20px"/>
+            <LayoutLeaf keyName={props.keyName+"bottomspace"} height="20px"/>
         </>
     );
 }
@@ -129,7 +132,7 @@ export function LayoutLeaf(props){
 
     const height=" h-["+props.height+"] ";
     return (
-        <li  key={props.key} className={"delimitationpurple flex  w-full "+height}>
+        <li  key={props.keyName} className={"delimitationpurple flex  w-full "+height}>
                 <div className="w-[50%] h-full  border-white border-r-8"></div>
                 <div className="w-[50%] h-full   border-white border-l-8"></div>
         </li>
