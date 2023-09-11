@@ -6,9 +6,9 @@ export function GoalSection(props){
        <div id="goals" className="delimitationgreen w-full lg:h-[550px] md:h-[500px] h-[650px] bg-[hsl(35,58%,81%)] flex md:flex-row flex-col items-center md:py-0 py-[15%] md:items-center xl:px-[140px] lg:px-[50px] md:px-[20px] relative overflow-hidden ">
 
             <div className="bg-[hsl(22,72%,63%)] lg:w-[400px] md:w-[350px] w-[80%] md:h-[300px] h-[300px]  p-6 rounded-xl ">
-                <h2  className="text-white mb-4 ">What are the goals?</h2>
+                <h2  className="text-white mb-4 ">What Are the Goals?</h2>
                 <p className="text-white text-[16px] leading-6">
-                With your team of a student, non-profit, and for-profit, together you will design and develop a social good program that tackles 
+                With your team of 2 students, 1 non-profit, and 1 for-profit, you will design and develop a social good program that tackles 
                 current issues in San Diego. Below are examples of past programs that were executed.
                 </p>
             </div>

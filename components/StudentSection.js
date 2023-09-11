@@ -29,8 +29,8 @@ export function StudentSection(props)
             <div className="lg:w-[30%] lg:h-[70%] xl:h-full  md:w-[70%] lg:mb-[0] md:mb-[10%] mb-[10%] delimitationpurple  md:px-[3%] px-[5%] md:py-[2%] py-[15%] flex flex-col justify-center lg:items-start items-center h-full bg-[hsl(35,58%,81%)] rounded-xl">
                 <h2  className=" text-[hsl(11,39%,57%)] font-bold lg:mb-[10%] md:mb-[5%] mb-[5%] ">Students</h2>
                 <p className=" leading-6 lg:mb-[10%] md:mb-[5%] mb-[5%] md:w-[85%] w-full text-center lg:text-left delimitationpurple">
-                    Cause Hacks is an opportunity for student to distinguish themselve in a competition, 
-                    work with industry professionals and expend your network at the same time.
+                    Cause Hacks is an opportunity for students to distinguish themselves in a competition,
+                    work with industry professionals, and expand your network.
                 </p>
                 <a href="/register/" className=" w-[110px] h-[50px]  flex justify-center items-center font-bold  text-[hsl(0,0%,100%)] bg-[hsl(67,23%,55%)] rounded-xl">Register</a>
             </div>
