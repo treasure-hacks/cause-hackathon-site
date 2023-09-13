@@ -59,8 +59,8 @@ export function ScheduleSection(props){
             <div className="bg-[hsl(190,63%,25%)] text-white h  lg:w-[370px] md:w-[350px] w-[80%] md:h-[300px] h-[300px]  p-6 rounded-xl mt-8  flex flex-col lg:items-start items-center">
                 <h2 className="text-white mb-8 text-center lg:text-left ">Schedule</h2>
                 <p className="text-white text-[16px] leading-6 mb-2 text-center lg:text-left"><em>Place:</em> VentureX San Diego</p>
-                <p className="text-white text-[16px] leading-6 mb-2 text-center lg:text-left"><em>Date:</em> October 15th</p>
-                <p className="text-white text-[16px] leading-6 mb-6 text-center lg:text-left"><em>Time:</em> 2PM</p>
+                <p className="text-white text-[16px] leading-6 mb-2 text-center lg:text-left"><em>Date:</em> October 13th</p>
+                <p className="text-white text-[16px] leading-6 mb-6 text-center lg:text-left"><em>Time:</em> 9:30 AM Pacific Time</p>
                 <a href="/register/" className=" w-[110px] h-[50px]  flex justify-center items-center font-bold  text-[hsl(0,0%,100%)] bg-[hsl(67,23%,55%)] rounded-xl">Register</a>
             </div>
             <TimeTree/>
