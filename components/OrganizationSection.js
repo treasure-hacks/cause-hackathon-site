@@ -9,9 +9,9 @@ export function OrganizationSection(props){
                     <div className="delimitationred lg:w-[42%] md:w-[47%] w-[80%] bg-[hsl(67,33%,78%)] md:p-[3%] p-[7%] rounded-2xl md:mb-0 mb-6">
                         <h3 className="text-[hsl(11,39%,57%)]  font-bold mb-6 delimitationyellow">For-Profit</h3>
                         <p className=" mb-[5%] md:w-[85%] w-full delimitationpurple">
-                        Come into the event to create the ideal program to not only do social good, but learn about the ROI of enacting corporate responsibility.
-                         While developing the program, they can assure that there are effective ways of measuring success, evident benefits to their employees’ productivity, 
-                         and assist with developing a program from scratch. Additionally, they’ll learn how to work with nonprofits more efficiently in the future.
+                        Come into the event to create the ideal program to not only do social good, but learn about the ROI of enacting corporate responsibility!
+                         While developing the program, you will see evident benefits to employee productivity, assure that there are effective ways of measuring success,
+                         and assist with developing a program from scratch. Additionally, you will learn how to work with nonprofits more efficiently in the future.
                         </p>
                     </div>
 
