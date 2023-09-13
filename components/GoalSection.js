@@ -9,7 +9,7 @@ export function GoalSection(props){
                 <h2  className="text-white mb-4 ">What Are the Goals?</h2>
                 <p className="text-white text-[16px] leading-6">
                 With your team of 2 students, 1 non-profit, and 1 for-profit, you will design and develop a social good program that tackles 
-                current issues in San Diego. Below are examples of past programs that were executed.
+                current issues in San Diego. Need inspiration? Take a look at the <a href="https://www.youtube.com/watch?v=qZDURaCYj6w" target="_blank" className="underline">Starbucks FoodShare Program</a>!
                 </p>
             </div>
             <img src="/environmentPuzzle.svg" className="absolute lg:w-[350px] md:w-[250px] w-[120px] z-20 xl:left-[28%] md:left-[35%] md:top-[0%] top-[70%]"/>
