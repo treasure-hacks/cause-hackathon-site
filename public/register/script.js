@@ -143,6 +143,12 @@ document.body.addEventListener('change', (e) => {
 document.body.addEventListener('focusout', (e) => {
   const questionEl = getQuestionContainer(e.target)
   // Only make invalid on focusout
+  if (e.target.type === 'url') {
+    if (/^https?:\/\//.test(e.target.value) || !/\.(org|com)/.test(e.target.value)) return
+    e.target.value = 'https://' + e.target.value
+    updateValidity(e.target, true)
+    save()
+  }
   if (e.target.validity && e.target.validity.valid === false) questionEl.classList.add('invalid')
 }, { capture: true })
 
