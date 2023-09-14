@@ -55,7 +55,9 @@ const schedule=[
 export function ScheduleSection(props){
 
     return (
-        <div id="schedule" className="delimitationred xl:px-[180px] lg:px-[50px] md:px-[20px] relative flex lg:flex-row flex-col items-center   lg:justify-between lg:items-center bg-[hsl(190,37%,55%)]">
+
+        <div className="delimitationred xl:px-[200px] lg:px-[50px] md:px-[20px] relative flex lg:flex-row flex-col items-center   lg:justify-between lg:items-center bg-[hsl(190,37%,55%)]">
+
             <div className="bg-[hsl(190,63%,25%)] text-white h  lg:w-[370px] md:w-[350px] w-[80%] md:h-[300px] h-[300px]  p-6 rounded-xl mt-8  flex flex-col lg:items-start items-center">
                 <h2 className="text-white mb-8 text-center lg:text-left ">Schedule</h2>
                 <p className="text-white text-[16px] leading-6 mb-2 text-center lg:text-left"><em>Place:</em> VentureX San Diego</p>
@@ -95,8 +97,10 @@ export function Leaf(props){
 
     const textAlign=(props.index%2)==0?" text-right ": " text-left ";
     const flexAlign=(props.index%2)==0?" flex-row ": " flex-row-reverse ";
+    const justify=(props.index%2)==0?" justify-end ": " justify-start ";
     const descriptionDefinedBorder=(props.index%2)==0?" border-r-8 ": " border-l-8 ";
     const timeDefinedBorder=(props.index%2)==0?" border-l-8 ": " border-r-8 ";
+    const position=(props.index%2)==0?" relative left-[5px] ": " relative left-[-5px] ";
     
 
     return (
@@ -104,14 +108,18 @@ export function Leaf(props){
             <li  key={props.keyName+"topspace"} className={"delimitationpurple flex  w-full text-white "+flexAlign}>
                 <div className={"delimitationblue w-[50%] flex border-white"+flexAlign+descriptionDefinedBorder}>
 
-                    <div className={"delimitationyellow font-normal w-[80%]"+textAlign}>
-                        <p className="font-normal mb-[2%]">{props.duration}</p>
-                        <p className="text-[16px] mb-[2%]">{props.title}</p>
+                    <div className={"delimitationyellow font-normal w-[60%]"+textAlign}>
+                        <div className={"  flex flex-row items-center mb-[4%]"+justify}>
+                            <img src="/ClockOutline.svg" className="h-full mr-[2%]"/>
+                            <p className="font-bold text-[14px]  text-[hsl(0,0%,85%)] ">{props.duration}</p>
+                        </div>
+                        
+                        <p className="text-[20px] font-bold text-[hsl(190,63%,25%)] mb-[10%]">{props.title}</p>
                         <p className="font-normal  ">{props.description}</p>
                     </div>
 
                     <div className={"delimitationred flex flex-row items-center flex-1 justify-end"+flexAlign}>
-                        <div className="delimitationblue w-[30%] aspect-square rounded-full bg-white "></div>
+                        <div className={"delimitationblue w-[30%] aspect-square rounded-full bg-white "+position}></div>
                         <div className="delimitationyellow w-[50%] border border-solid border-t-8 border-white"></div>
                     </div>
 
@@ -119,11 +127,11 @@ export function Leaf(props){
 
                 <div className={"delimitationgreen  px-[6%] flex flex-col justify-center border-white"+timeDefinedBorder}>
 
-                    <p className="text-[20px]">{props.time}</p>
+                    <p className="text-[20px] text-[hsl(190,63%,25%)] font-bold">{props.time}</p>
 
                 </div>
             </li>
-            <LayoutLeaf keyName={props.keyName+"bottomspace"} height="20px"/>
+            <LayoutLeaf keyName={props.keyName+"bottomspace"} height="50px"/>
         </>
     );
 }

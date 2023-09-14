@@ -45,7 +45,7 @@ body {
     }
 
     p{
-      @apply text-[14px] font-bold leading-6;
+      @apply text-[14px] font-medium leading-6;
     }
 
     em{
